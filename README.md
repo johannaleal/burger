@@ -10,6 +10,7 @@ In this project, I have created a command-line application for managing a compan
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -35,6 +36,8 @@ In this project, I have created a command-line application for managing a compan
 
 To run this app, open the console in the directory where the start.js file is located and run the following command:
 >node start
+
+## Screenshots
 
 ## License
 
