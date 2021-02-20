@@ -8,12 +8,12 @@ if (process.env.JAWSDB_URL) {
 }
 else {
   connection = mysql.createConnection({
-      host: 'localhost',
+      host: 'd6rii63wp64rsfb5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       port: 3306,
-      user: 'root',
+      user: 'ezj4pgt73oykwfq3',
       // NOTE: Be sure to add your MySQL password here!
-      password: 'Trilogy2021',
-      database: 'cat_db',
+      password: 'opbw1fvexq33ulru',
+      database: 'csklpj4rgyotjve7',
     });
 };
 
