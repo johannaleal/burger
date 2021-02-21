@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
 body {
   background-color: #FECB62;
   font-family: Arial, Helvetica, sans-serif;
@@ -18,9 +22,13 @@ h4 {
 }
 
 li {
-  padding: 5px;
+  padding: 2px;
   margin: 5px;
   background: #faebd7;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .label {
@@ -37,9 +45,20 @@ li {
   margin-bottom: 5px;
 }
 
-button {
+.devour-button {
+  background-color: lightgrey;
+  color: black;
+  border: none;
+  font-size: small;
+  width: 70px;
+  height:30px;
+  border-radius: 4px;
+}
+
+.submit-button {
   background-color: #3362AD;
   color: white;
+  border: none;
   font-size: large;
   font-weight: bolder;
   width: 100px;
