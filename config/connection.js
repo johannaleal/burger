@@ -11,7 +11,6 @@ else {
       host: 'd6rii63wp64rsfb5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       port: 3306,
       user: 'ezj4pgt73oykwfq3',
-      // NOTE: Be sure to add your MySQL password here!
       password: 'opbw1fvexq33ulru',
       database: 'csklpj4rgyotjve7',
     });
@@ -26,5 +25,5 @@ connection.connect((err) => {
   console.log(`connected as id ${connection.threadId}`);
 });
 
-// Export connection for our ORM to use.
+// Export connection for the ORM to use.
 module.exports = connection;

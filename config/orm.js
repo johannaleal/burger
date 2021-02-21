@@ -25,8 +25,8 @@ const objToSql = (ob) => {
       if (typeof value === 'string' && value.indexOf(' ') >= 0) {
         value = `'${value}'`;
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      // e.g. {burger_name: 'The Heart Attack Supreme'} => ["name='The Heart Attack Supreme'"]
+      // e.g. {devoured: true} => ["devoured=true"]
       arr.push(`${key}=${value}`);
     }
   }
@@ -35,7 +35,7 @@ const objToSql = (ob) => {
   return arr.toString();
 };
 
-// Object for all our SQL statement functions.
+// Object for all the SQL statement functions.
 const orm = {
   all(tableInput, cb) {
     const queryString = `SELECT * FROM ${tableInput};`;
@@ -66,7 +66,7 @@ const orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // An example of objColVals would be {burger_name: Whopper, devoured: true}
   update(table, objColVals, condition, cb) {
     let queryString = `UPDATE ${table}`;
 
