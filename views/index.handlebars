@@ -1,38 +1,52 @@
-<img src="./assets/img/burger.png" alt="burger picture">
+<div class="container bg"></div>
+  <div class="row">
+    <div class="center col-md-12">
+      <img src="./assets/img/burger.png" alt="burger picture">
 
-<h1>Eat-Da-Burger!</h1>
-
-{{!-- <ul>
-  {{#each burgers}}
-  {{#unless devoured}}
-  {{> burgers/burger-block devoured=false}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  {{> burgers/burger-block devoured=true}}
-  {{/if}}
-  {{/each}}
-</ul> --}}
-
-<form id="create-form">
-
-  <div class="form-group">
-    <textarea id="ca" name="name" rows="5" cols="50"></textarea>
+      <h1>Eat-Da-Burger!</h1>
+    </div>
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0" id="notdevoured"> Not Devoured
-  </div> --}}
+  <br>
 
-  <button type="submit">Submit</button>
+  <div class="row">
+      <div class="col-md-3"></div>
+      <div class="center col-md-3">
+        <h4>Burgers You Can Eat</h4>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      
+      <div class="col-md-3">      
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+  
+  <br>
 
-  <h4>Enter a burger you want to eat. Click the "Submit" button.</h4>
-</form>
+  <div class="row">
+    <div class="center col-md-12">
+      <form id="create-form">
+
+        <div class="form-group">
+          <p><h4>Enter a burger you want to eat and click the "Submit" button.</h4></p>
+          <textarea id="ca" name="name" rows="5" cols="50"></textarea>
+        </div>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>  
+  </div>
+</div>
